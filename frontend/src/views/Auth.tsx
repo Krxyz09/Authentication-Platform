@@ -237,7 +237,7 @@ export default function Auth() {
 
       setFinalToken(result.token);
       setTone('success');
-      setMessage('Passkey verified. Layer 2 cleared — fully signed in.');
+      setMessage('Passkey verified. Layer 2 cleared — fully logged in.');
     } catch (err: any) {
       setTone('error');
       setMessage(describeWebAuthnError(err));
@@ -467,7 +467,7 @@ export default function Auth() {
             <div className="rounded-xl border border-blue-200 bg-blue-50 p-6 text-sm text-blue-700 space-y-2">
               <div className="flex items-center gap-2 font-semibold">
                 <ShieldCheck className="h-5 w-5" />
-                Fully signed in.
+                Fully logged in.
               </div>
               <p className="text-slate-500 break-all text-xs">Session token: {finalToken}</p>
             </div>
