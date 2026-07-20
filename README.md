@@ -1,5 +1,5 @@
-# Optimal_Primes
-Instead of relying on a single authentication factor, **Optimal_Primes** combines **facial verification** with **WebAuthn passkeys**, providing a seamless login experience while significantly improving account security.
+# Auhentication Platform
+Instead of relying on a single authentication factor, I have combined **facial verification** with **WebAuthn passkeys**, providing a seamless login experience while significantly improving account security.
 
 ---
 
@@ -21,7 +21,7 @@ Instead of relying on a single authentication factor, **Optimal_Primes** combine
 
 Traditional authentication methods usually rely on a single point of trust. If that trust is compromised, the account becomes vulnerable.
 
-Optimal_Primes separates authentication into two independent verification layers.
+This authentication into two independent verification layers.
 
 ### Layer 1 — Identity Verification
 
@@ -180,7 +180,7 @@ EXPECTED_ORIGIN=http://localhost:5173
 Run the backend:
 
 ```bash
-npm run dev
+npx tsx src/server.ts
 ```
 
 ---
@@ -193,11 +193,6 @@ npm install
 npm install face-api.js
 ```
 
-Download the **face-api.js model weights** and place them inside:
-
-```
-frontend/public/models/
-```
 
 Run the frontend:
 
@@ -205,13 +200,6 @@ Run the frontend:
 npm run dev
 ```
 
-Verify the models are correctly loaded:
-
-```
-http://localhost:5173/models/tiny_face_detector_model-weights_manifest.json
-```
-
----
 
 
 # 🚀 Future Improvements
@@ -226,4 +214,3 @@ http://localhost:5173/models/tiny_face_detector_model-weights_manifest.json
 ---
 
 
-Built as part of the **Tally Code Brewers Authentication Platform Challenge**, demonstrating secure passwordless authentication using modern web security standards.
